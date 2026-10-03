@@ -4,7 +4,13 @@ def read_two_ints():
     # ADD a Docstring for this function
     # the return shown below is a placeholder to make sure this runs
     # TODO: complete the function instead of the line shown below
-    return 1, 2
+    x_string = input("give me x: ")
+    x = int(x_string)
+
+    y_string = input("give me y: ")
+    y = int(y_string)
+
+    return x, y
 
 # Task 2.1:
 #  Complete the function "compute_multadd" below:
@@ -12,7 +18,13 @@ def compute_multadd(a, b):
     # ADD a Docstring for this function
     # the pass shown below is a placeholder to make sure this runs
     # TODO: complete the function instead of the line shown below
-    pass
+    mult_result = a * b
+    print("mult result:", mult_result)
+
+    add_result = a + b
+    print("add result:", add_result)
+
+    return mult_result / add_result
 
 # Task 3.1:
 #  Complete the function "print_fancy" below:
@@ -20,7 +32,12 @@ def print_fancy(a, b, ab_multadd):
     # ADD a Docstring for this function
     # the pass shown below is a placeholder to make sure this runs
     # TODO: complete the function instead of the line shown below
-    pass
+    print("****************")
+    print("RESULTS:")
+    print("first number:", a)
+    print("second number:", b)
+    print("multadd result:", ab_multadd)
+    print("================")
 
 def main ():
     # ADD a Docstring for this function
